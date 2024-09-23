@@ -27,7 +27,7 @@ async function getPhotos () {
 
 	// Otherwise, fetch fresh data from the API
 	try {
-		let response = await fetch('https://vanillajsacademy.com/api/photos.json');
+		let response = await fetch('https://leanwebclub.com/course-apis/photos.json');
 		if (!response.ok) throw response;
 		let photos = await response.json();
 		savePhotos(photos);
